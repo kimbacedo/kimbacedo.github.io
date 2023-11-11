@@ -1,0 +1,91 @@
+.formacao {
+  background-color: #33509c;
+}
+.formacao-container {
+  max-width: 1500px;
+  padding: 40px 60px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 150px;
+}
+.formacao .subtitulo {
+  color: #4661a8;
+}
+.formacao-slide {
+  display: grid;
+  padding: 20px;
+  background-color: #e1f1ff;
+  margin-bottom: 20px;
+  border-radius: 5px 0 5px 5px;
+  position: relative;
+  gap: 5px;
+}
+.formacao-icon {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+}
+.formacao-ano {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #101f6f;
+  font-size: 1rem;
+}
+.formacao-nivel {
+  color: #020040;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.formacao-titulo {
+  color: #020040;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.formacao-inst {
+  color: #020040;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.formacao-hab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.formacao-hab li {
+  color: #020040;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #020040;
+}
+.formacao-detalhe {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+/* Responsivo */
+
+@media (max-width: 750px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .formacao-container .subtitulo {
+    font-size: 4.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .formacao-container {
+    gap: 40px;
+  }
+  .formacao-container .subtitulo {
+    font-size: 3.5rem;
+  }
+}

@@ -1,0 +1,69 @@
+.introducao {
+  max-width: 1500px;
+  padding: 40px 60px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  align-items: center;
+  gap: 150px;
+}
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  font-weight: 700;
+  position: relative;
+}
+.introducao h1::after {
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 100px;
+  background: url(./img/separador_1.svg) no-repeat center;
+  position: absolute;
+  top: 30px;
+  left: -237px;
+}
+
+/* responsivo */
+
+@media (max-width: 1500px) {
+  .introducao h1 {
+    font-size: 3.5rem;
+  }
+  .introducao h1::after {
+    width: 400px;
+    top: 12px;
+    left: 5px;
+  }
+}
+@media (max-width: 950px) {
+  .introducao {
+    gap: 100px;
+  }
+  .introducao h1 {
+    font-size: 2.5rem;
+  }
+  .introducao h1::after {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .introducao h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
